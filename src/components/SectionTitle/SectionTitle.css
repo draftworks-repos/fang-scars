@@ -1,0 +1,42 @@
+.section-title {
+  width: 100%;
+  margin-bottom: var(--space-6);
+}
+
+.section-title--center {
+  text-align: center;
+}
+
+.section-title--left {
+  text-align: left;
+}
+
+.section-title--left .section-title__flourish {
+  justify-content: flex-start;
+}
+
+.section-title--right {
+  text-align: right;
+}
+
+.section-title--right .section-title__flourish {
+  justify-content: flex-end;
+}
+
+.section-title__heading {
+  font-size: var(--fs-h2);
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+.section-title__highlight {
+  color: var(--yellow-500);
+}
+
+.section-title__subtitle {
+  margin-top: 8px;
+  font-size: 1rem;
+  opacity: 0.8;
+  max-width: 60ch;
+  margin-inline: auto;
+}

@@ -1,0 +1,66 @@
+:root {
+  /* Colors */
+  --yellow-500: #FFCE55;
+  --yellow-600: #F2B92E;
+  --yellow-200: #FFE9A8;
+  --charcoal-900: #23262E;
+  --charcoal-800: #2F333D;
+  --charcoal-700: #3B404B;
+  --paper: #F6F1E7;
+  --paper-2: #EDE6D6;
+  --ink: #1B1D22;
+  --ink-soft: #4A4D56;
+  --white: #FFFFFF;
+  --ghost: rgba(35, 38, 46, 0.06);
+
+  /* Fonts */
+  --font-display: "Oswald", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: "Montserrat", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-script: "Mr Dafoe", cursive;
+
+  /* Typography Scale */
+  --fs-hero: clamp(2.8rem, 8vw, 7rem);
+  --fs-h1: clamp(2.8rem, 7vw, 6rem);
+  --fs-h2: clamp(2.2rem, 4.6vw, 4rem);
+  --fs-h3: clamp(1.3rem, 2vw, 1.75rem);
+  --fs-body: clamp(0.95rem, 0.3vw + 0.9rem, 1.0625rem);
+  --fs-label: 0.75rem;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-10: 128px;
+
+  /* Section Padding */
+  --section-py: clamp(88px, 11vw, 150px);
+  --container-max: 1320px;
+  --container-px: clamp(20px, 4vw, 56px);
+
+  /* Borders & Shadows */
+  --r-sm: 6px;
+  --r-md: 12px;
+  --border-ink: 2px solid var(--ink);
+  --shadow-hard: 4px 4px 0 var(--ink);
+  --shadow-hard-hover: 2px 2px 0 var(--ink);
+  --shadow-photo: 0 14px 30px rgba(0, 0, 0, 0.25);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-1: 0.25s;
+  --dur-2: 0.6s;
+  --dur-3: 0.9s;
+}
+
+/* Breakpoint reference notes:
+   Mobile <= 640px
+   Tablet: 641px - 1024px
+   Desktop >= 1025px
+   Large >= 1440px
+*/

@@ -1,0 +1,15 @@
+.dot-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 6px);
+  grid-gap: 8px;
+  width: max-content;
+  pointer-events: none;
+  opacity: var(--dot-opacity, 0.5);
+}
+
+.dot-grid__dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--dot-color, var(--yellow-500));
+}

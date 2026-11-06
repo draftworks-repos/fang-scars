@@ -1,0 +1,19 @@
+.page-transition-curtain {
+  position: fixed;
+  inset: 0;
+  background-color: var(--charcoal-900);
+  z-index: 99990;
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-transition-curtain__mark {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--yellow-500);
+  letter-spacing: 0.2em;
+}

@@ -1,0 +1,33 @@
+.sticker {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 14px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  transform: rotate(var(--sticker-rotate, -4deg));
+  border: var(--border-ink);
+  box-shadow: var(--shadow-hard);
+  z-index: 4;
+  white-space: nowrap;
+}
+
+.sticker--yellow {
+  background-color: var(--yellow-500);
+  color: var(--ink);
+}
+
+.sticker--paper {
+  background-color: var(--paper);
+  color: var(--ink);
+}
+
+.sticker--charcoal {
+  background-color: var(--charcoal-900);
+  color: var(--yellow-500);
+  border-color: var(--yellow-500);
+  box-shadow: 4px 4px 0 var(--yellow-500);
+}

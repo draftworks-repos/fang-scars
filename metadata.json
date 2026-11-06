@@ -1,0 +1,6 @@
+{
+  "name": "Gold Fang Tattoo Co.",
+  "description": "Gold Fang Tattoo Co. - A bold torn paper tattoo studio website featuring custom tattooing, artists, gallery, service pricing, and booking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

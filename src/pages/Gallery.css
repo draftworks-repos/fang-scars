@@ -1,0 +1,113 @@
+.gallery-page {
+  width: 100%;
+  overflow-x: clip;
+}
+
+/* 1) Hero */
+.gallery-hero {
+  padding-top: 140px;
+  padding-bottom: 40px;
+  background-color: var(--paper);
+  color: var(--ink);
+}
+
+.gallery-hero__badge {
+  font-family: var(--font-body);
+  font-size: var(--fs-label);
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: var(--ink-soft);
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.gallery-hero__h1 {
+  font-size: var(--fs-h1);
+  color: var(--ink);
+  line-height: 0.95;
+  margin-bottom: 16px;
+}
+
+.gallery-hero__lead {
+  font-size: clamp(1.05rem, 1.4vw, 1.2rem);
+  color: var(--ink-soft);
+  max-width: 60ch;
+}
+
+/* 2 & 3) Filters & Masonry */
+.gallery-content {
+  padding-bottom: var(--section-py);
+  background-color: var(--paper);
+}
+
+.gallery-filters {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+  padding-top: 24px;
+}
+
+.gallery-filter-btn {
+  height: 42px;
+  padding: 0 22px;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  background-color: var(--paper-2);
+  color: var(--ink);
+  border: var(--border-ink);
+  box-shadow: 3px 3px 0 var(--ink);
+  cursor: pointer;
+  border-radius: 0;
+  transition: transform var(--dur-1) var(--ease-out),
+              box-shadow var(--dur-1) var(--ease-out),
+              background-color var(--dur-1) var(--ease-out);
+}
+
+.gallery-filter-btn:hover {
+  background-color: var(--yellow-200);
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px 0 var(--ink);
+}
+
+.gallery-filter-btn--active {
+  background-color: var(--yellow-500);
+  box-shadow: var(--shadow-hard);
+}
+
+/* Masonry via CSS columns */
+.gallery-masonry {
+  column-count: 4;
+  column-gap: 24px;
+  width: 100%;
+}
+
+.gallery-masonry__item {
+  break-inside: avoid;
+  margin-bottom: 24px;
+  display: inline-block;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .gallery-masonry {
+    column-count: 3;
+    column-gap: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .gallery-masonry {
+    column-count: 2;
+    column-gap: 14px;
+  }
+
+  .gallery-filter-btn {
+    height: 38px;
+    padding: 0 16px;
+    font-size: 0.85rem;
+  }
+}

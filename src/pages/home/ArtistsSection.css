@@ -1,0 +1,12 @@
+.artists-section {
+  position: relative;
+  background-color: var(--paper);
+  color: var(--ink);
+  padding: var(--section-py) 0;
+  overflow: hidden;
+}
+
+.artists-section__container {
+  position: relative;
+  z-index: 2;
+}

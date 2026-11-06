@@ -1,0 +1,77 @@
+.reviews-section {
+  position: relative;
+  background-color: var(--yellow-500);
+  color: var(--ink);
+  padding: var(--section-py) 0;
+  overflow: hidden;
+}
+
+.reviews-section__container {
+  position: relative;
+  z-index: 2;
+}
+
+.reviews-section__dots {
+  position: absolute;
+  top: 40%;
+}
+
+.reviews-section__dots--left {
+  left: 20px;
+}
+
+.reviews-section__dots--right {
+  right: 20px;
+}
+
+.reviews-section__stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.reviews-section__card-wrapper {
+  width: 100%;
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reviews-section__controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 16px;
+}
+
+.reviews-section__dots-list {
+  display: flex;
+  gap: 8px;
+}
+
+.reviews-section__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--ink);
+  opacity: 0.25;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: opacity 0.2s ease, transform 0.2s ease, background-color 0.2s ease;
+}
+
+.reviews-section__dot--active {
+  opacity: 1;
+  background-color: var(--ink);
+  transform: scale(1.25);
+}
+
+@media (max-width: 640px) {
+  .reviews-section__dots {
+    display: none;
+  }
+}

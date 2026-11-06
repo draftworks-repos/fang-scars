@@ -1,0 +1,105 @@
+.gallery-tile {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  transform: rotate(var(--tile-rotate, 0deg));
+  transition: transform var(--dur-2) var(--ease-out), z-index 0.2s ease;
+  user-select: none;
+}
+
+.gallery-tile:hover,
+.gallery-tile:focus-visible {
+  transform: rotate(0deg) scale(1.02);
+  z-index: 10;
+}
+
+.gallery-tile__border {
+  background-color: var(--white);
+  padding: 6px;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-tile__image-wrapper {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 3/4;
+}
+
+.gallery-tile__image-wrapper img {
+  transition: transform 0.5s var(--ease-out);
+}
+
+.gallery-tile:hover .gallery-tile__image-wrapper img {
+  transform: scale(1.06);
+}
+
+.gallery-tile__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 206, 85, 0.88);
+  color: var(--ink);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 12px;
+  text-align: center;
+}
+
+.gallery-tile:hover .gallery-tile__overlay,
+.gallery-tile:focus-visible .gallery-tile__overlay {
+  opacity: 1;
+}
+
+.gallery-tile__icon-box {
+  width: 44px;
+  height: 44px;
+  background: var(--ink);
+  color: var(--yellow-500);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-tile__hover-title {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.gallery-tile__caption {
+  padding-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gallery-tile__name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: var(--ink);
+  text-transform: uppercase;
+}
+
+.gallery-tile__category {
+  font-size: 0.7rem;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 640px) {
+  .gallery-tile {
+    transform: none !important;
+  }
+}

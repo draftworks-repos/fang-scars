@@ -1,0 +1,83 @@
+.services-section {
+  position: relative;
+  background-color: var(--yellow-500);
+  color: var(--ink);
+  padding: var(--section-py) 0;
+  overflow: hidden;
+}
+
+.services-section__container {
+  position: relative;
+  z-index: 2;
+}
+
+.services-section__dots {
+  position: absolute;
+}
+
+.services-section__dots--top-right {
+  top: 10px;
+  right: 20px;
+}
+
+.services-section__dots--bottom-left {
+  bottom: 10px;
+  left: 20px;
+}
+
+.services-section__tabs-scroll {
+  width: 100%;
+  margin-bottom: 44px;
+}
+
+.services-section__tabs-track {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.services-section__stage {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  width: 100%;
+}
+
+.services-section__arrows--desktop-left {
+  position: absolute;
+  left: 20px;
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.services-section__arrows--desktop-right {
+  position: absolute;
+  right: 20px;
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.services-section__mobile-controls {
+  display: none;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+@media (max-width: 1024px) {
+  /* Hide the top image-based tabs on tablet and mobile */
+  .services-section__tabs-scroll {
+    display: none;
+  }
+
+  /* Show the single pair of navigation controls on tablet and mobile */
+  .services-section__mobile-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+  }
+}

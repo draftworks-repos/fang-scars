@@ -1,0 +1,6 @@
+.transition-link {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-flex;
+}

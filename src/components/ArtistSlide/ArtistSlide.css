@@ -1,0 +1,118 @@
+.artist-slide {
+  width: 100%;
+  max-width: 920px;
+  margin-inline: auto;
+}
+
+.artist-slide__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  gap: clamp(24px, 4vw, 48px);
+  align-items: center;
+}
+
+.artist-slide__media-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.artist-slide__dots {
+  display: inline-flex;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.artist-slide__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--ink);
+  opacity: 0.25;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: opacity 0.2s ease, transform 0.2s ease, background-color 0.2s ease;
+}
+
+.artist-slide__dot--active {
+  opacity: 1;
+  background-color: var(--yellow-500);
+  border: 1px solid var(--ink);
+  transform: scale(1.2);
+}
+
+.artist-slide__panel-col {
+  display: flex;
+  align-items: center;
+}
+
+.artist-slide__panel {
+  background-color: var(--paper-2);
+  padding: 44px 36px;
+  border: 1px solid rgba(27, 29, 34, 0.08);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+  /* Irregular torn top edge */
+  clip-path: polygon(
+    0% 3%,
+    3% 0%,
+    8% 2.5%,
+    14% 0.5%,
+    20% 3.2%,
+    28% 1%,
+    36% 2.8%,
+    44% 0.8%,
+    52% 3%,
+    60% 0.9%,
+    70% 3.1%,
+    80% 1.2%,
+    90% 2.8%,
+    96% 0.5%,
+    100% 2.2%,
+    100% 100%,
+    0% 100%
+  );
+}
+
+.artist-slide__name {
+  font-size: var(--fs-h2);
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.artist-slide__badge {
+  font-family: var(--font-body);
+  font-size: var(--fs-label);
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+
+.artist-slide__bio {
+  color: var(--ink-soft);
+  font-size: var(--fs-body);
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.artist-slide__footer {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .artist-slide__grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .artist-slide__panel {
+    padding: 32px 24px;
+  }
+}

@@ -1,0 +1,14 @@
+.flourish {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 24px;
+}
+
+.flourish__svg {
+  width: 140px;
+  height: 20px;
+  display: block;
+}

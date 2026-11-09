@@ -1,9 +1,9 @@
-import React from 'react';
-import './NewsletterSection.css';
-import images from '../../data/images';
-import Button from '../../components/Button/Button';
-import Flourish from '../../components/Flourish/Flourish';
-import TornEdge from '../../components/TornEdge/TornEdge';
+import React from "react";
+import "./NewsletterSection.css";
+import images from "../../data/images";
+import Button from "../../components/Button/Button";
+import Flourish from "../../components/Flourish/Flourish";
+import TornEdge from "../../components/TornEdge/TornEdge";
 
 export default function NewsletterSection() {
   return (
@@ -17,7 +17,11 @@ export default function NewsletterSection() {
 
       {/* Ghost wings SVG backdrop */}
       <div className="cta-home-section__ghost-wings" aria-hidden="true">
-        <svg viewBox="0 0 600 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          viewBox="0 0 600 240"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M300 200 C240 160 160 120 40 140 C100 90 200 80 280 120 C220 60 120 40 20 50 C120 10 240 30 300 90 C360 30 480 10 580 50 C480 40 380 60 320 120 C400 80 500 90 560 140 C440 120 360 160 300 200 Z"
             fill="var(--ghost)"
@@ -33,21 +37,31 @@ export default function NewsletterSection() {
         </div>
 
         <h2 id="cta-home-heading" className="cta-home-section__title">
-          READY TO INK YOUR <span className="highlight-yellow">NEXT PIECE?</span>
+          READY TO INK YOUR{" "}
+          <span className="highlight-yellow">NEXT PIECE?</span>
         </h2>
 
         <Flourish color="var(--yellow-600)" />
 
         <p className="cta-home-section__lead">
-          Walk-ins welcome daily. Consultations are always one-on-one and private with your resident tattooer.
-          Bring rough sketches, reference photos, or just an emotion. We will shape it together.
+          Walk-ins welcome daily. Consultations are always one-on-one and
+          private with your resident tattooer. Bring rough sketches, reference
+          photos, or just an emotion. We will shape it together.
         </p>
 
         <div className="cta-home-section__actions">
-          <Button variant="primary" to="/contact" className="cta-home-section__btn">
+          <Button
+            variant="primary"
+            to="/contact"
+            className="cta-home-section__btn"
+          >
             BOOK A CONSULTATION
           </Button>
-          <Button variant="dark" to="/gallery" className="cta-home-section__btn">
+          <Button
+            variant="dark"
+            to="/gallery"
+            className="cta-home-section__btn"
+          >
             EXPLORE GALLERY
           </Button>
         </div>
